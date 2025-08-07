@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wonderboom International Airport - Markets & Exhibitions</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+     body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: url('./images/market.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #333;
+        }
+
+
+    header {
+      background-color: #793f98;
+      padding: 10px 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+
+    .header-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .logo img {
+      height: 70px;
+      width: auto;
+    }
+
+    .social-icons {
+      display: flex;
+      gap: 10px;
+    }
+
+    .social-icons a {
+      color: white;
+      font-size: 1.2rem;
+      transition: color 0.3s;
+    }
+
+    .social-icons a:hover {
+      color: #4CAF50;
+    }
+
+    nav {
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      padding: 6px 12px;
+      border-radius: 4px;
+      transition: background 0.3s;
+    }
+
+    nav a:hover {
+      background: #4CAF50;
+    }
+
+    .category-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 15px;
+    background-color: white;
+    border-bottom: 1px solid #ccc;
+    flex-wrap: wrap;
+  }
+
+  .category-tabs a {
+    padding: 12px 24px;
+    background-color: #eee;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #793f98;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;  /* Remove underline */
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  .category-tabs a i {
+    margin-right: 8px;  /* Spacing between icon and text */
+  }
+
+  /* Hover effect */
+  .category-tabs a:hover {
+    background-color: #793f98;
+    color: white;
+    transform: translateY(-4px);  /* Lift effect */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);  /* Enhance shadow on hover */
+  }
+
+  /* Active button style */
+  .category-tabs a.active {
+    background-color: #793f98;
+    color: white;
+  }
+
+  /* Smooth hover effect for icon and text */
+  .category-tabs a:hover i {
+    transform: rotate(20deg); /* Rotate the icon on hover for extra effect */
+    transition: transform 0.3s ease;
+  }
+
+    main {
+      max-width: 1100px;
+      margin: auto;
+      padding: 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 20px;
+    }
+
+    .event-card {
+  background: rgba(255, 255, 255, 0.8); /* Transparent white */
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  backdrop-filter: blur(4px); /* Optional: glass effect */
+}
+
+
+    .event-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .event-content {
+      padding: 15px;
+      flex: 1;
+    }
+
+    .event-content h3 {
+      margin: 0 0 10px;
+      color: #793f98;
+    }
+
+    footer {
+      background-color: #793f98;
+      color: white;
+      padding: 20px;
+    }
+
+    .footer-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .footer-bottom {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 0.85rem;
+      border-top: 1px solid rgba(255,255,255,0.3);
+      padding-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="header-top">
+    <div class="logo">
+      <img src="./images/logo.jpg" alt="Wonderboom International Airport Logo">
+    </div>
+    <div class="social-icons">
+      <a href="#"><i class="fab fa-x-twitter"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-youtube"></i></a>
+    </div>
+  </div>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Who We Are</a>
+    <a href="#">Events</a>
+    <a href="#">Tenant Directory</a>
+    <a href="#">Tariffs</a>
+    <a href="#">Maintenance</a>
+    <a href="#">Report a Hazard</a>
+  </nav>
+</header>
+
+<div class="category-tabs">
+  <a href="./Events.html" class="active"><i class="fas fa-calendar-alt"></i> All Events</a>
+  <a href="./airshows.html"><i class="fas fa-plane"></i> Airshows</a>
+  <a href="./markets-exhibitions.html"><i class="fas fa-store"></i> Markets & Exhibitions</a>
+  <a href="./skydiving.html"><i class="fas fa-parachute-box"></i> Skydiving</a>
+  <a href="./restaurants.html"><i class="fas fa-utensils"></i> Restaurants</a>
+</div>
+
+<main>
+  <div class="event-card">
+    <img src="../images/market1.jpg" alt="Handmade Wonders Craft Fair">
+    <div class="event-content">
+      <h3>Handmade Wonders Craft Fair</h3>
+      <p><strong>Date:</strong> 10 October 2025</p>
+      <p><strong>Location:</strong> Wonderboom International Airport</p>
+      <p>Browse a variety of unique handmade crafts, local art, and specialty goods from talented artisans.</p>
+    </div>
+  </div>
+
+  <div class="event-card">
+    <img src="../images/market2.jpg" alt="Local Artists Showcase">
+    <div class="event-content">
+      <h3>Local Artists Showcase</h3>
+      <p><strong>Date:</strong> 8–10 November 2025</p>
+      <p><strong>Location:</strong> Wonderboom International Airport</p>
+      <p>Enjoy stunning exhibitions from local painters, sculptors, and photographers in a vibrant creative space.</p>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="footer-container">
+    <div>
+      <h4>Wonderboom National Airport</h4>
+      <p>Lintvelt Road</p>
+      <p>Doornpoort</p>
+      <p>Tshwane</p>
+    </div>
+    <div>
+      <h4>General Enquiries</h4>
+      <p>012 358 5266</p>
+      <p>012 567 1188</p>
+      <p>012 567 1189</p>
+    </div>
+    <div>
+      <h4>Accounts & Leases</h4>
+      <p>012 358 5248</p>
+      <p>012 358 5265</p>
+    </div>
+    <div>
+      <h4>Fire Brigade & Emergencies</h4>
+      <p>012 358 2272</p>
+      <p>012 358 6343</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    © 2025 Wonderboom National Airport
+  </div>
+</footer>
+
+</body>
+</html>
